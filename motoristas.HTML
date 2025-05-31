@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motoristas Disponíveis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    .container {
+      background-color: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .title {
+      background-color: #0b7d65;
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+    }
+    .driver {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+    .status-disponivel {
+      color: green;
+    }
+    .status-corrida {
+      color: brown;
+    }
+    .status-offline {
+      color: gray;
+    }
+    .whatsapp-button {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .whatsapp-button:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">MOTORISTAS DISPONÍVEIS AGORA</div>
+
+    <div class="driver"><span><strong>Leonardo</strong> – <span class="status-disponivel">Disponível</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+    <div class="driver"><span><strong>Rafael</strong> – <span class="status-disponivel">Disponível</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+    <div class="driver"><span><strong>Gabriel</strong> – <span class="status-disponivel">Disponível</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+
+    <div class="driver"><span><strong>Anderson</strong> – <span class="status-corrida">Em Corrida</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+    <div class="driver"><span><strong>Ricardo</strong> – <span class="status-corrida">Em Corrida</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+    <div class="driver"><span><strong>Bruno</strong> – <span class="status-corrida">Em Corrida</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+    <div class="driver"><span><strong>Felipe</strong> – <span class="status-corrida">Em Corrida</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+
+    <div class="driver"><span><strong>Lucas</strong> – <span class="status-offline">Offline</span></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+    <div class="driver"><span><strong>Offline</strong></span><button class="whatsapp-button">Chamar no WhatsApp</button></div>
+  </div>
+</body>
+</html>
