@@ -1,262 +1,74 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Motoristas Disponíveis Agora</title>
+  <title>PEÇA SEU MOTORISTA UBER AQUI</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      background-color: #f4f4f4;
+      margin: 0;
       padding: 20px;
-    }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
       text-align: center;
-      background: #0b6e4f;
-      color: white;
-      padding: 10px;
-      border-radius: 5px;
     }
-    .driver {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
+    h1 {
+      color: #333;
     }
-    .status {
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 800px;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    .status-disponivel {
+      color: green;
       font-weight: bold;
     }
-    .disponivel { color: green; }
-    .em-corrida { color: darkred; }
-    .offline { color: black; }
-    .whatsapp-button {
-      padding: 6px 12px;
-      background: white;
-      border: 2px solid black;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .whatsapp-button:hover {
-      background: #f0f0f0;
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>MOTORISTAS DISPONÍVEIS AGORA</h2>
-    <div id="lista-motoristas">
-
-      <div class="driver">
-        <span><strong>Motorista 1</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 2</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 3</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 4</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 5</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 6</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 7</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 8</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 9</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 10</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 11</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 12</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 13</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 14</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 15</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 16</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 17</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 18</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 19</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 20</strong> – <span class="status disponivel">Disponível</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 21</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 22</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 23</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 24</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 25</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 26</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 27</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 28</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 29</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 30</strong> – <span class="status em-corrida">Em Corrida</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 31</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 32</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 33</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 34</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 35</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 36</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 37</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 38</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 39</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-      <div class="driver">
-        <span><strong>Motorista 40</strong> – <span class="status offline">Offline</span></span>
-        <button class="whatsapp-button">Chamar no WhatsApp</button>
-      </div>
-    
-    </div>
-  </div>
+  <h1>PEÇA SEU MOTORISTA UBER AQUI</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Motorista</th>
+        <th>Status</th>
+        <th>WhatsApp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Fábio uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20F%C3%A1bio%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Thiago uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Thiago%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>João Vitor uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Jo%C3%A3o%20Vitor%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Dito Uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Dito%20Uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Joyce Uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Joyce%20Uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Viviane uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Viviane%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Ana Lívia uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Ana%20L%C3%ADvia%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Ana Clara uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Ana%20Clara%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Lucas uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Lucas%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>João Gabriel uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Jo%C3%A3o%20Gabriel%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Bento uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Bento%20uber" target="_blank">Chamar</a></td></tr>
+      <tr><td>Isabela uber</td><td class="status-disponivel">Disponível</td><td><a class="whatsapp-btn" href="https://wa.me/554335232100?text=Quero%20falar%20com%20Isabela%20uber" target="_blank">Chamar</a></td></tr>
+    </tbody>
+  </table>
 </body>
 </html>
